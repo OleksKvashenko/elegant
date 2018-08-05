@@ -1,0 +1,128 @@
+.footer {
+  background: url(#{$i}footer.jpg) no-repeat;
+  background-size: cover;
+}
+
+.footer-container {
+  padding: 110px 0 120px;
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+.footer-title{
+  font-family: $ralewayFont;
+  font-weight: 700;
+  font-size: (35px);
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: (75px);
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    width: (86px);
+    height: (2px);
+    background: $whiteFont;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.footer-social{
+  padding-top: (60px);
+  display: flex;
+  justify-content: center;
+  max-width: (260px);
+  margin: 0 auto;
+}
+
+.svg-icon_footer{
+  align-self: flex-end;
+  margin-right: 24px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.svg-icon_twitter{
+  width: (25px);
+  height: (20px);
+}
+
+.svg-icon_facebook{
+  width: (14px);
+  height: (25px);
+}
+
+.svg-icon_linkin{
+  width: (24px);
+  height: (25px);
+}
+
+.svg-icon_vimeo{
+  width: (25px);
+  height: (22px);
+}
+
+.svg-icon_icoBe{
+  width: (25px);
+  height: (17px);
+}
+
+
+.footer-form{
+  margin-top: (75px);
+  padding: 0 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.footer-form_input{
+  align-self: start;
+  padding: (10px) (10px) (10px) (30px);
+  width: 100%;
+  border-bottom: 2px solid $white;
+  font-family: $latoFont;
+  font-size: (18px);
+  margin-bottom: 100px;
+  &::placeholder{
+    color: $grey ;
+    font-family: $latoFont;
+    font-style: italic;
+    font-size: (18px);
+  }
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+.footer-button {
+  text-align: center;
+  margin-top: 74px;
+}
+
+.button {
+  padding: (20px) (60px);
+  max-width: (185px);
+  text-decoration: none;
+  color: $white;
+  font-family: $latoFont;
+  font-size: (24px);
+  text-transform: uppercase;
+  border: 2px solid $white;
+}
+
+.svg-icon_footer:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+
+
+
+
+

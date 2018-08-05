@@ -1,0 +1,121 @@
+.work {
+  background: $white;
+  padding-bottom: 80px;
+}
+
+.work-container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+.work-container-title {
+  padding-top: (110px);
+  padding-bottom: (70px);
+  font-family: $ralewayFont;
+  font-size: (35px);
+  font-weight: 700;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    width: (86px);
+    height: (2px);
+    background: $black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.work-content-container {
+  margin-top: (90px);
+  margin-bottom: (80px);
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.work-content__wrapper {
+  background-size: cover;
+  width: 30%;
+  height: 420px;
+}
+
+.work-content__wrapper-1 {
+  background: url(#{$i}kinderplanet.jpg) no-repeat;
+
+}
+
+.work-content__wrapper-2 {
+  background: url(#{$i}jetindus.jpg) no-repeat;
+
+}
+
+.work-content__wrapper-3 {
+  background: url(#{$i}cards.jpg) no-repeat;
+
+}
+.work-content__hoverBox {
+
+}
+
+[class^="work-content__howerBox"] {
+   display: none;
+}
+
+[class^="work-content__wrapper"]:hover [class^="work-content__hoverBox"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+[class^="work-content__wrapper"]:hover [class^="svg-icon-content"] {
+  display: flex;
+}
+
+[class^="work-content__wrapper"]:hover [class^="work-content__hoverText"] {
+  color: $white;
+}
+.work-content__hoverText {
+  align-self: center;
+  font-family: $latoFont;
+  font-size: (22px);
+  text-transform: uppercase;
+  color: transparent;
+  margin-bottom: 30px;
+}
+
+.svg-icon-content {
+  width: (41px);
+  height: (41px);
+  align-self: center;
+  display: none;
+}
+
+
+.work-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.work-button {
+  color: $black;
+  padding: 18px 146px;
+  border: 2px solid $black;
+  text-align: center;
+  font-family: $latoFont;
+  font-size: (24px);
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    font-weight: 900;
+  }
+}
+

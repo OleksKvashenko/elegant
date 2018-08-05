@@ -1,0 +1,38 @@
+.dolore-container {
+  background: url(#{$i}mosaic.jpg) no-repeat;
+  background-size: cover;
+}
+
+.dolore-container-content {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: 0 (16px);
+}
+
+.dolore-context-container {
+  max-width: (565px);
+  padding-top: (170px);
+  padding-bottom: (110px);
+}
+
+.dolore-context__title {
+  text-transform: uppercase;
+  font-family: $latoFont;
+  font-size: (45px);
+  color: $white;
+}
+
+.dolore-context__text {
+  font-family: $latoFont;
+  font-weight: 100;
+  font-size: (22px);
+  color: $white;
+  padding-bottom: (65px);
+}
+
+.dolore-context__link {
+  font-family: $latoFont;
+  font-weight: 400;
+  font-size: (18px);
+  color: $white;
+}
